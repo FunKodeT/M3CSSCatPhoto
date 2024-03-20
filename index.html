@@ -2,53 +2,65 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
         <title>CatPhotoApp</title>
     </head>
     <body>
         <main>
-            <h1>CatPhotoApp</h1>
+            <h1>Cat Photo App!</h1>
             <section>
-                <h2>Cat Photos</h2>
-                <!-- TODO: Add link to cat photos -->
-                <p>See more 
-                    <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
-                    in our gallery.</p>
-                <a href="https://freecatphotoapp.com">
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
-                </a>
+                <h2>Cat Photos Gallery</h2>
+
+                <!-- Insert Slideshow Here; Utilize Carousel Resource; 5 Images -->
+
+                <p>See the original, 
+                    <em>copyright-free</em> 
+                    cat photos for this application
+                    <a target="_blank" href="https://freecatphotoapp.com">
+                        <strong>here!</strong>
+                    </a>
+                    <br>
+                    Courtesy of 
+                    <a href="https://www.freecodecamp.org/">
+                        <strong>freecodecamp</strong>
+                    </a>
+                    and the wonderful individuals who work there.</p>
             </section>
             <section>
-                <h2>Cat Lists</h2>
-                <h3>Things cats love:</h3>
-                <ul>
-                    <li>cat nip</li>
-                    <li>laser pointers</li>
-                    <li>lasagna</li>
-                </ul>
-                <figure>
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-                    <figcaption>Cats 
-                        <em>love</em> 
-                        lasagna.
-                    </figcaption>  
-                </figure>
-                <h3>Top 3 things cats hate:</h3>
+                <h2>Cat-themed Fun Facts</h2>
+                <h3>Top 3 things Cats usually love:</h3>
                 <ol>
-                    <li>flea treatment</li>
-                    <li>thunder</li>
-                    <li>other cats</li>
+                    <li>Cat nip</li>
+                    <!-- ^ CSS:hover element; Text[It is theorized that cats feel a sense of euphoria or extreme happiness followed by relaxation when smelling catnip. This <em><strong>may</strong></em> be due to the scent mimicking a cat's sex pheremones.] -->
+                    <li>Sleeping</li>
+                    <!-- ^ CSS:hover element; Text[Felines have evolved to sleep for long periods throughout the day in order conserve energy hunting, chasing, and finally killing their next meal. The 'hunt instinct' is still present in domesticated cats, despite lack of need for hunting.] -->
+                    <li>Boxes</li>
+                    <!-- ^ CSS:hover element; Text[Cats love boxes, and though there are many reasons, the primary one is they are confined and enclosed spaces. This instinct is driven by wild felines commonly using enclosed spaces for hiding, hunting, safety, and warmth.] -->
                 </ol>
-                <figure>
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-                    <figcaption>Cats 
-                        <strong>hate</strong> 
-                        other cats.
-                    </figcaption>  
-                </figure>
+                <h3>Top 3 things Cats usually hate:</h3>
+                <ol>
+                    <li>Dirty litter boxes</li>
+                    <!-- ^ CSS:hover element; Text[Cat's are very concerned with cleanliness, and are just as averse to using a dirty toiletry area as humans are.] -->
+                    <li>Staring</li>
+                    <!-- ^ CSS:hover element; Text[The reality of this is quite simple. Direct eye contact, specifically for extended times, is viewed by the cat as a threatening gesture.] -->
+                    <li>Too much or too little attention</li>
+                    <!-- ^ CSS:hover element; Text[A cat is a largely independent creature, largely preferring solace and reliance on self. However, they are also social creatures to an extent. This largely results in cats only wishing to have attention given to them on their own terms.] -->
+                </ol>
+                
+                <h3>Common Misconceptions:</h3>
+                <ul>    
+                    <li>Cats love lasagna and milk.</li>
+                    <!-- ^ CSS:card element; Text[Cat's are lactose intolerant, and struggle to digest milk-based products such as cheese, milk, and lasagna.] -->
+                    <li>Cats really like laser pointers.</li>
+                    <!-- ^ CSS:card element; Text[You can damage your Cat's retina's through the use of a laser pointer. They look like they enjoy it, but it can cause permanent damage due to the sensitity of their eyes.] -->
+                    <li>All cats are evil.</li>
+                    <!-- ^ CSS:card element; Text[Each cat has a unique personality, just like dogs. This can result in some being lovely, and others being perceived as 'evil'.] -->
+                </ul>
             </section>
             <section>
             <h2>Cat Form</h2>
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <!-- Add additional fields in the following general order: [Do you like cats?] [Do you have a cat?] [Does your cat cooperate with other animals?] [Has your cat ever experienced any of the things they hate before?] [Did you know any of these fun facts?] [Did you learn anything from the fun facts?] -->
                     <fieldset>
                         <legend>Is your cat an indoor or outdoor cat?</legend>
                         <label><input 
@@ -69,6 +81,7 @@
                     </fieldset>
                     <fieldset>
                         <legend>What's your cat's personality?</legend>
+                        <!-- ^ Change to [Describe your cat's personality:] and use a text-field for input -->
                         <input 
                             id="loving" 
                             type="checkbox" 
@@ -99,10 +112,49 @@
             </section>
         </main>
         <footer>
-            <p>No Copyright - 
-                <a href="https://www.freecodecamp.org">
-                freeCodeCamp.org</a>
+            <p>| Copyright | © | March 2024 |
+                <br>| Matthew Cootey | Tooele Technical College |
             </p>
         </footer>
     </body>
 </html>
+
+<!-- Resources
+
+    [Assignment Requirements]
+        1) Styled via CSS Stylesheet
+        2) Linked to GitHub Pages, Glitch URL, or CodePen URL
+        3) No plagiarism, make it your own website
+        4) Use a seperate Git branch for work
+        5) Merge the seperate Git branch with the main Git branch when coding is completed
+        6) Minimum useage of ATLEAST 5 different styles via CSS / HTML
+        7) Minimum useage of ATLEAST 1 Grid or Flex-box
+
+    [Original (M1) 'CatPhotoApp' Resources]
+
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."> 
+
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+            <figcaption>
+                Cats <em>love</em> lasagna.
+            </figcaption>  
+        </figure>
+        
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>
+                Cats <strong>hate</strong> other cats.
+            </figcaption>  
+        </figure>
+
+    [Formatting Resources]
+        https://www.w3schools.com/howto/howto_js_slideshow.asp
+        ^ Code formatting for Slideshow or Carousel gallery
+        https://stackoverflow.com/questions/65796587/display-text-on-hover#:~:text=You%20can%20use%20the%20title,user%20hovers%20over%20the%20element.
+        ^ Code formatting for :hover over text displaying different text
+
+    [Photo Resources]
+        https://depositphotos.com/photos/cat.html
+
+-->
