@@ -3,17 +3,92 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
         <title>CatPhotoApp</title>
     </head>
     <body>
         <main>
-            <h1>Cat Photo App!</h1>
+            <h1 class="headerbar">Cat Photo's For All!!</h1>
             <section>
-                <h2>Cat Photos Gallery</h2>
-
-                <!-- Insert Slideshow Here; Utilize Carousel Resource; 5 Images -->
-
-                <p>See the original, 
+                <!-- **** Slideshow HTML Start **** -->
+                <!-- Photos courtesy of: https://depositphotos.com/ -->
+                <h2 class="photogallery">Cat Photos Gallery</h2>
+                <!-- Slideshow courtesy of: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <div class="slideshow-container">
+                    <div class="CatSlides fade" id="displayfirst">
+                        <div class="numbertext">
+                            1 / 5
+                        </div>
+                        <img 
+                            src="Resources/Images/CatGreyEyesClosedHeld.png" 
+                            alt="scottish fold"
+                            style="width:100%;">
+                        <div class="breed">
+                            Scottish Fold
+                        </div>
+                    </div>
+                    <div class="CatSlides fade">
+                        <div class="numbertext">
+                            2 / 5
+                        </div>
+                        <img 
+                            src="Resources/Images/CatOrangeLongHairEyesOpenClose.png" 
+                            alt="maine coon"
+                            style="width:100%">
+                        <div class="breed">
+                            Orange Maine Coon
+                        </div>
+                    </div>
+                    <div class="CatSlides fade">
+                        <div class="numbertext">
+                            3 / 5
+                        </div>
+                        <img 
+                            src="Resources/Images/CatOrangeTabbyRubbingBenchOutdoors.png" 
+                            alt="tabby"
+                            style="width:100%">
+                        <div class="breed">
+                            Tabby
+                        </div>
+                    </div>
+                    <div class="CatSlides fade">
+                        <div class="numbertext">
+                            4 / 5
+                        </div>
+                        <img 
+                            src="Resources/Images/CatFlatEyesOpenCloseSadWindow.png" 
+                            alt="british shorthair"
+                            style="width:100%">
+                        <div class="breed">
+                            British Shorthair
+                        </div>
+                    </div>
+                    <div class="CatSlides fade">
+                        <div class="numbertext">
+                            5 / 5
+                        </div>
+                        <img 
+                            src="Resources/Images/CatLonghairEyesOpenClose.png" 
+                            alt="himalayan"
+                            style="width:100%">
+                        <div class="breed">
+                            Himalayan
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  <div class="dotnav" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                  </div>
+                <!-- **** Slideshow HTML End **** -->
+                <!-- **** Original Data Rep Start **** -->
+                <p class="originalapp">See the original, 
                     <em>copyright-free</em> 
                     cat photos for this application
                     <a target="_blank" href="https://freecatphotoapp.com">
@@ -25,37 +100,62 @@
                         <strong>freecodecamp</strong>
                     </a>
                     and the wonderful individuals who work there.</p>
+                <!-- **** Original Data Rep End **** -->
             </section>
-            <section>
-                <h2>Cat-themed Fun Facts</h2>
-                <h3>Top 3 things Cats usually love:</h3>
-                <ol>
-                    <li>Cat nip</li>
-                    <!-- ^ CSS:hover element; Text[It is theorized that cats feel a sense of euphoria or extreme happiness followed by relaxation when smelling catnip. This <em><strong>may</strong></em> be due to the scent mimicking a cat's sex pheremones.] -->
-                    <li>Sleeping</li>
-                    <!-- ^ CSS:hover element; Text[Felines have evolved to sleep for long periods throughout the day in order conserve energy hunting, chasing, and finally killing their next meal. The 'hunt instinct' is still present in domesticated cats, despite lack of need for hunting.] -->
-                    <li>Boxes</li>
-                    <!-- ^ CSS:hover element; Text[Cats love boxes, and though there are many reasons, the primary one is they are confined and enclosed spaces. This instinct is driven by wild felines commonly using enclosed spaces for hiding, hunting, safety, and warmth.] -->
-                </ol>
-                <h3>Top 3 things Cats usually hate:</h3>
-                <ol>
-                    <li>Dirty litter boxes</li>
-                    <!-- ^ CSS:hover element; Text[Cat's are very concerned with cleanliness, and are just as averse to using a dirty toiletry area as humans are.] -->
-                    <li>Staring</li>
-                    <!-- ^ CSS:hover element; Text[The reality of this is quite simple. Direct eye contact, specifically for extended times, is viewed by the cat as a threatening gesture.] -->
-                    <li>Too much or too little attention</li>
-                    <!-- ^ CSS:hover element; Text[A cat is a largely independent creature, largely preferring solace and reliance on self. However, they are also social creatures to an extent. This largely results in cats only wishing to have attention given to them on their own terms.] -->
-                </ol>
-                
-                <h3>Common Misconceptions:</h3>
-                <ul>    
-                    <li>Cats love lasagna and milk.</li>
-                    <!-- ^ CSS:card element; Text[Cat's are lactose intolerant, and struggle to digest milk-based products such as cheese, milk, and lasagna.] -->
-                    <li>Cats really like laser pointers.</li>
-                    <!-- ^ CSS:card element; Text[You can damage your Cat's retina's through the use of a laser pointer. They look like they enjoy it, but it can cause permanent damage due to the sensitity of their eyes.] -->
-                    <li>All cats are evil.</li>
-                    <!-- ^ CSS:card element; Text[Each cat has a unique personality, just like dogs. This can result in some being lovely, and others being perceived as 'evil'.] -->
-                </ul>
+            <section class="facts">
+                <!-- **** Fun Fact Start **** -->
+                <h2 class="factsheader">Cat-themed Fun Facts</h2>
+                <div>
+                    <h3 class="factsheader">Top 3 things Cats usually love:</h3>
+                    <ol>
+                        <li class="maintext">Catnip</li>
+                            <div class="hovertext">    
+                                <p>It is theorized that cats feel a sense of euphoria or extreme happiness followed by relaxation when smelling catnip. This <em><strong>may</strong></em> be due to the scent mimicking a cat's sex pheremones.</p>
+                            </div>
+                        <li class="maintext">Sleeping</li>
+                            <div class="hovertext">    
+                                <p>Felines have evolved to sleep for long periods throughout the day in order conserve energy hunting, chasing, and finally killing their next meal. The 'hunt instinct' is still present in domesticated cats, despite lack of need for hunting.</p>
+                            </div>
+                        <li class="maintext">Boxes</li>
+                            <div class="hovertext">
+                                <p>Cats love boxes, and though there are many reasons, the primary one is they are confined and enclosed spaces. This instinct is driven by wild felines commonly using enclosed spaces for hiding, hunting, safety, and warmth.</p>
+                            </div>
+                    </ol>
+                </div>
+                <div>
+                    <h3 class="factsheader">Top 3 things Cats usually hate:</h3>
+                    <ol>
+                        <li class="maintext">Dirty litter boxes</li>
+                            <div class="hovertext">
+                                <p>Cat's are very concerned with cleanliness, and are just as averse to using a dirty toiletry area as humans are.</p>
+                            </div>
+                        <li class="maintext">Staring</li>
+                            <div class="hovertext">
+                                <p>The reality of this is quite simple. Direct eye contact, specifically for extended times, is viewed by the cat as a threatening gesture.</p>
+                            </div>
+                        <li class="maintext">Too much or too little attention</li>
+                            <div class="hovertext">
+                                <p>A cat is a largely independent creature, largely preferring solace and reliance on self. However, they are also social creatures to an extent. This largely results in cats only wishing to have attention given to them on their own terms.</p>
+                            </div>
+                    </ol>
+                </div>
+                <div>
+                    <h3 class="factsheader">Common Misconceptions:</h3>
+                    <ul>    
+                        <li class="maintext">Cats love lasagna and milk.</li>
+                            <div class="hovertext">
+                                <p>Cat's are lactose intolerant, and struggle to digest milk-based products such as cheese, milk, and lasagna.</p>
+                            </div>
+                        <li class="maintext">Cats really like laser pointers.</li>
+                            <div class="hovertext">
+                                <p>You can damage your Cat's retina's through the use of a laser pointer. They look like they enjoy it, but it can cause permanent damage due to the sensitity of their eyes.</p>
+                            </div>
+                        <li class="maintext">All cats are evil.</li>
+                            <div class="hovertext">
+                                <p>Each cat has a unique personality, just like dogs. This can result in some being lovely, and others being perceived as 'evil'.</p>
+                            </div>
+                    </ul>
+                </div>
             </section>
             <section>
             <h2>Cat Form</h2>
@@ -151,6 +251,7 @@
     [Formatting Resources]
         https://www.w3schools.com/howto/howto_js_slideshow.asp
         ^ Code formatting for Slideshow or Carousel gallery
+
         https://stackoverflow.com/questions/65796587/display-text-on-hover#:~:text=You%20can%20use%20the%20title,user%20hovers%20over%20the%20element.
         ^ Code formatting for :hover over text displaying different text
 
